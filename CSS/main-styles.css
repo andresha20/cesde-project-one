@@ -109,7 +109,11 @@ a:hover {
 .section-with-padding {
     max-width: 60%;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .title {
