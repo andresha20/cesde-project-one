@@ -1,9 +1,29 @@
-
-
 body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #181818;
+}
+
+::placeholder {
+    color: red;
+    opacity: 1; /* Firefox */
+}
+
+input {
+    padding: 0.5rem;
+    border-bottom: 3px solid #181818;
+    border-color: rgb(145, 6, 6);
+    border-top: none;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: rgba(0,0,0,0);
+    border-right: none;
+    border-left: none;
+    user-select: none;
+}
+
+textarea:focus, input:focus{
+    outline: none;
 }
 
 .special-title {
@@ -88,6 +108,15 @@ a:hover {
     color: rgb(166, 43, 43);
 }
 
+.section-wrapper-with-border {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 15px;
+    border: 1px solid #ecebeb;
+    padding: 1rem;
+    box-shadow: 0px 10px 25px -3px rgba(0,0,0,0.1);
+}
+
 .sub-menu-item {
     color: rgb(166, 43, 43); 
     text-decoration:underline; 
@@ -96,17 +125,16 @@ a:hover {
     font-size: small;
 }
 
-
 .main-navigation {
     display: flex;
     user-select: none;
     height: 3.5rem;
     justify-content: center;
     box-shadow: 0px 10px 25px -3px rgba(0,0,0,0.1);
-
 }
 
 .section-with-padding {
+    user-select: none;
     max-width: 60%;
     margin: 0 auto;
     padding: 3rem;

@@ -18,6 +18,12 @@
     padding: 1rem;
 }
 
+.column-contact {
+    padding: 2rem;
+    border-radius: 15px;
+    background-color: rgb(252, 242, 241);
+}
+
 .button {
     background-color: red;
     color: white;
@@ -45,5 +51,7 @@
 
 .button-container {
     display: flex;
+    align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
